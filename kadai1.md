@@ -16,12 +16,12 @@ imagesc(ORG); axis image; % 画像の表示
 IMG = imresize(ORG,0.5^1); % 画像の縮小  
 IMG2 = imresize(IMG,2^1,'box'); % 画像の拡大
 
-1/2サンプリングの結果を図２に示す．<br>
+1/2サンプリングの結果を図２に示す．
 
 ![原画像](https://github.com/gasagasa/lecture_image_processing/blob/master/image/kadai1_1.png?raw=true)
 図2 1/2サンプリング
 
-同様に原画像を1/4サンプリングするには、原画像を1/4倍に縮小した後，4倍に拡大すればよい．すなわち，
+同様に原画像を1/4サンプリングするには，原画像を1/4倍に縮小した後，4倍に拡大すればよい．すなわち，
 
 IMG = imresize(IMG,0.5^2); % 画像の縮小  
 IMG2 = imresize(IMG,2^2,'box'); % 画像の拡大
@@ -31,7 +31,7 @@ IMG2 = imresize(IMG,2^2,'box'); % 画像の拡大
 ![原画像](https://github.com/gasagasa/lecture_image_processing/blob/master/image/kadai1_2.png?raw=true)
 図3 1/4サンプリング
 
-1/8から先のサンプリングも同様に行う。これらをforループで回し、1/32サンプリングまでを行った。図4から図6にその結果を示す。
+1/8から先のサンプリングも同様に行う．これらをforループで回し，1/32サンプリングまでを行った．図4から図6にその結果を示す．
 <pre>
 <code>
 for i = 1:5
