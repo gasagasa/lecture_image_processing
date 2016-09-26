@@ -10,6 +10,15 @@ ORG=imread('image/game_keitai_broken_kids.png'); % Œ´‰æ‘œ‚Ì“ü—Í
 imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\¦
 pause; % ˆê’â~
 
+
+for i = 1:5
+    IMG = imresize(ORG,0.5^i); % ‰æ‘œ‚Ìk¬
+    IMG2 = imresize(IMG,2^i,'box'); % ‰æ‘œ‚ÌŠg‘å
+    imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+    pause; % ˆê’â~
+end
+
+%{
 IMG = imresize(ORG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,2,'box'); % ‰æ‘œ‚ÌŠg‘å
 imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
@@ -33,3 +42,4 @@ pause; % ˆê’â~
 IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
 IMG2 = imresize(IMG,32,'box'); % ‰æ‘œ‚ÌŠg‘å
 imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+%}
