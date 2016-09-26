@@ -9,7 +9,7 @@ imagesc(ORG); axis image; % 画像の表示
 によって，原画像を読み込み，表示した結果を図１に示す．
 
 <div style="text-align: center;">
-![原画像](image/org_img.png)
+![原画像](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/org_img.png)
 図1 原画像
 </div>
 <br>
@@ -21,7 +21,7 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 1/2サンプリングの結果を図２に示す．<br>
 
 <div style="text-align: center;">
-![原画像](image/kadai1_1.png)
+![原画像](https://github.com/gasagasa/lecture_image_processing/blob/master/image/kadai1_1.png?raw=true)  
 図2 1/2サンプリング
 </div>
 
