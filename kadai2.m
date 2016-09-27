@@ -9,7 +9,7 @@ ORG=imread('image/kadai2_5.jpg'); % Œ´‰æ‘œ‚Ì“ü—Í
 imagesc(ORG); axis image;
 pause;
 
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
+ORG = rgb2gray(ORG); colormap(gray); colorbar; 
 imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\Ž¦
 pause; % ˆêŽž’âŽ~
 
