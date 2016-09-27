@@ -37,3 +37,5 @@ imagesc(IMG); colormap(gray); colorbar; axis image;
 
 ![192よりも大きい](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/kadai3_5.png?raw=true)
 図6 輝度値が192よりも大きい
+
+このように閾値の輝度値を大きくすると、暗い部分が黒く塗り潰される面積が大きくなっていっていることがわかる。
