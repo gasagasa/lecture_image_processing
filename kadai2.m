@@ -5,7 +5,10 @@
 
 clear; % 変数のオールクリア
 
-ORG=imread('image/game_keitai_broken_kids.png'); % 原画像の入力
+ORG=imread('image/kadai2_5.jpg'); % 原画像の入力
+imagesc(ORG); axis image;
+pause;
+
 ORG = rgb2gray(ORG); colormap(gray); colorbar;
 imagesc(ORG); axis image; % 画像の表示
 pause; % 一時停止
@@ -24,6 +27,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 pause;
 
 % ８階調については，各自検討してください．
+
 IMG0 = ORG>32;
 IMG1 = ORG>64;
 IMG2 = ORG>96;
