@@ -9,7 +9,7 @@ ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
 imagesc(ORG); colormap(gray); colorbar; axis image; % 画像の表示
 </code></pre>
 
-まず一行目で原画像を読み込み、二行目で画像をグレースケール化し、三行目でグレースケール化された原画像を表示している。原画像を図1、グレースケール化された原画像を図2に示す。
+まず一行目で原画像を読み込み，二行目で画像をグレースケール化し，三行目でグレースケール化された原画像を表示している．原画像を図1，グレースケール化された原画像を図2に示す．
 
 ![原画像](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/org_img.png?raw=true)
 図1 原画像
@@ -17,7 +17,7 @@ imagesc(ORG); colormap(gray); colorbar; axis image; % 画像の表示
 ![グレースケール](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/kadai3_1.png?raw=true)
 図2 グレースケール画像
 
-ところで、まず判別分析法が何かというと、分離度が最大となるしきい値を求め、自動的に二値化を行う手法である。分離度はクラス間分散とクラス内分散との比で求めるものであり、これが最大となるしきい値で輝度を二分し、黒と白の二色に完全に分ける。図3に判別分析法を行った結果を示す。
+ところで，まず判別分析法が何かというと，分離度が最大となるしきい値を求め，自動的に二値化を行う手法である．分離度はクラス間分散とクラス内分散との比で求めるものであり，これが最大となるしきい値で輝度を二分し，黒と白の二色に完全に分ける．図3に判別分析法を行った結果を示す．
 
 <pre><code>
 H = imhist(ORG); %ヒストグラムのデータを列ベクトルEに格納
@@ -46,6 +46,6 @@ imagesc(IMG); colormap(gray); colorbar; axis image;
 </code></pre>
 
 ![判別分析法](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/kadai5_1.png?raw=true)
-図2 判別分析後
+図3 判別分析後
 
-このとき、しきい値をdisp(max_thres)で確認したところ、1となっていた。そのため、少しでも輝度のある場所は白くなっている。
+このとき，しきい値をdisp(max_thres)で確認したところ，1となっていた．そのため，輝度が1以上ある場所は白くなっている．
