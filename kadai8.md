@@ -17,7 +17,7 @@ imagesc(ORG); colormap(gray); colorbar; axis image; % 画像の表示
 ![グレースケール](https://raw.githubusercontent.com/gasagasa/lecture_image_processing/master/image/kadai3_1.png?raw=true)
 図2 グレースケール画像
 
-図2を白と黒に二値化する。輝度が128よりも大きい部分を白、小さい部分を黒としたものを図3に示す。
+図2を白と黒に二値化する．輝度が128よりも大きい部分を白，小さい部分を黒としたものを図3に示す．
 
 <pre><code>
 IMG = ORG>128; % 128で二値化
